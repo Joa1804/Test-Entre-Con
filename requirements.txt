@@ -1,0 +1,7 @@
+flask
+Instale a dependência:
+
+pip install flask
+Execute a aplicação:
+
+python app.py
