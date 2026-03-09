@@ -6,6 +6,10 @@ app = Flask(__name__)
 def home():
     return "Sistema de Gerenciamneto de Bliblioteca"
 
+@app.route("/sobre")
+def sobre():
+    return "Sistema desenvolvido em Flask para estudo de CI/CD"
+
 @app.route("/status")
 def status():
     return {"status": "API online"}
