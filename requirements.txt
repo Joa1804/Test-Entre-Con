@@ -1,7 +1,7 @@
 flask
-Instale a dependência:
+Instale a dependencia:
 
 pip install flask
-Execute a aplicação:
+Execute a aplicacaoo:
 
 python app.py
