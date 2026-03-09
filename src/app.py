@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return {"mensagem": "API funcionando corretamente"}
+    return "Sistema de Gerenciamneto de Bliblioteca"
 
 @app.route("/status")
 def status():
