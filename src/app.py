@@ -4,11 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    feature-home-v2
         return "Sistema de Gestão de Biblioteca"
-=======
-    return "Sistema de Biblioteca Online"
-        main
 
 @app.route("/sobre")
 def sobre():
