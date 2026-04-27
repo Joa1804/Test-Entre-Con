@@ -12,7 +12,7 @@ def sobre():
 
 @app.route("/status")
 def status():
-    return {"status": "API online"}
+    return {"status": "ok"}
 
 @app.route("/livros")
 def livros():
