@@ -9,27 +9,19 @@ def home():
 
 @app.route("/sobre")
 def sobre():
-    return "Sistema desenvolvido em Flask para estudo de CI/CD"
-
-@app.route("/status")
-def status():
-    return {"status": "ok"}
+    return render_template("sobre.html")
 
 @app.route("/livros")
 def livros():
-    return "Lista de livros cadastrados"
+    return render_template("livros.html")
 
 @app.route("/autores")
 def autores():
-    return "Lista de autores cadastrados"
+    return render_template("autores.html")
 
 @app.route("/contato")
 def contato():
-    return "Página de contato do sistema"
-
-@app.route("/cadastro-livro")
-def cadastro_livro():
-    return "Página de cadastro de livros"
+    return render_template("contato.html")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
