@@ -2,17 +2,38 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-    <h1>Contato</h1>
+    <header>
+        <h1>Sistema de Gestão de Biblioteca</h1>
 
-    <p>Email: contato@biblioteca.com</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/livros">Livros</a>
+            <a href="/autores">Autores</a>
+            <a href="/contato">Contato</a>
+        </nav>
+    </header>
 
-    <a href="/">Voltar</a>
+    <div class="container">
+
+        <h2>Contato</h2>
+
+        <p>Email: contato@biblioteca.com</p>
+
+        <p>Telefone: (19) 99999-9999</p>
+
+    </div>
+
+    <footer>
+        © 2025 Biblioteca Flask
+    </footer>
 
 </body>
 </html>

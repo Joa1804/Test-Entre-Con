@@ -2,22 +2,41 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autores</title>
-
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-    <h1>Autores</h1>
+    <header>
+        <h1>Sistema de Gestão de Biblioteca</h1>
 
-    <ul>
-        <li>Machado de Assis</li>
-        <li>George Orwell</li>
-        <li>J.R.R Tolkien</li>
-    </ul>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/livros">Livros</a>
+            <a href="/autores">Autores</a>
+            <a href="/contato">Contato</a>
+        </nav>
+    </header>
 
-    <a href="/">Voltar</a>
+    <div class="container">
+
+        <h2>Autores</h2>
+
+        <ul>
+            <li>Machado de Assis</li>
+            <li>George Orwell</li>
+            <li>J.R.R Tolkien</li>
+            <li>Clarice Lispector</li>
+        </ul>
+
+    </div>
+
+    <footer>
+        © 2025 Biblioteca Flask
+    </footer>
 
 </body>
 </html>
