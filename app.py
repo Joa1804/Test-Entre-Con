@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-        return "Sistema de Gestão de Biblioteca"
+    return render_template("index.html")
 
 @app.route("/sobre")
 def sobre():
