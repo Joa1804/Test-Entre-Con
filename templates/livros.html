@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Livros</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-    <h1>Lista de Livros</h1>
+    <header>
+        <h1>Biblioteca</h1>
 
-    <ul>
-        <li>Dom Casmurro</li>
-        <li>1984</li>
-        <li>O Hobbit</li>
-    </ul>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/livros">Livros</a>
+            <a href="/autores">Autores</a>
+            <a href="/contato">Contato</a>
+        </nav>
+    </header>
 
-    <a href="/">Voltar</a>
+    <div class="container">
+
+        <h2>Lista de Livros</h2>
+
+        <ul>
+            <li>Dom Casmurro</li>
+            <li>1984</li>
+            <li>O Hobbit</li>
+            <li>Harry Potter</li>
+        </ul>
+
+    </div>
+
+    <footer>
+        © 2025 Biblioteca Flask
+    </footer>
 
 </body>
 </html>

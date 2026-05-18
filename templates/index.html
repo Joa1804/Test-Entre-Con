@@ -5,63 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
 
-    <style>
-
-        body{
-            margin:0;
-            font-family: Arial, sans-serif;
-            background:#f4f4f4;
-            display:flex;
-            flex-direction:column;
-            min-height:100vh;
-        }
-
-        header{
-            background:#2563eb;
-            color:white;
-            padding:20px;
-            text-align:center;
-        }
-
-        .container{
-            flex:1;
-            padding:40px;
-            text-align:center;
-        }
-
-        .footer{
-            background:#111827;
-            color:white;
-            text-align:center;
-            padding:20px;
-            font-size:14px;
-        }
-
-        .footer a{
-            color:#60a5fa;
-            text-decoration:none;
-            margin:0 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
     <header>
         <h1>Sistema de Gestão de Biblioteca</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/livros">Livros</a>
+            <a href="/autores">Autores</a>
+            <a href="/contato">Contato</a>
+        </nav>
     </header>
 
     <div class="container">
-        <h2>Bem-vindo ao sistema</h2>
-        <p>Projeto Flask para estudo de CI/CD e deploy.</p>
+        <h2>Bem-vindo</h2>
+
+        <p>
+            Projeto desenvolvido em Flask para estudos de deploy,
+            CI/CD e desenvolvimento web.
+        </p>
     </div>
 
-    <footer class="footer">
-        <p>© 2025 Biblioteca Flask</p>
-
-        <a href="/sobre">Sobre</a>
-        <a href="/contato">Contato</a>
-        <a href="/livros">Livros</a>
+    <footer>
+        © 2025 Biblioteca Flask
     </footer>
 
 </body>
